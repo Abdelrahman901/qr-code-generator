@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qurfy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="text" id="placement" placeholder="Enter some text or URL" />
+      <div class="options">
+        <select class="size">
+          <option value="100">100 x 100</option>
+          <option value="200" selected>200 x 200</option>
+          <option value="300">300 x 300</option>
+        </select>
+      </div>
+      
+      <div class="container"></div>
+      <div class="box">
+        <button id="generate" disabled>Generate</button>
+        <a href="#" id="download-btn">Download</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
